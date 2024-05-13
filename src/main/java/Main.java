@@ -10,13 +10,14 @@ public class Main {
 		{
 		
 		System.out.println("Please enter the animal you would like to see the population plotted of: ");
-		String animal = scan.next();
+		String sName = scan.next();
 		
 		System.out.println("Please enter the number of days you observed the animals for: ");
 		int numDays = scan.nextInt();
 		
-		Population myPop = new Population();
-		myPop.compPopAprox(numDays, animal);
+		Population myPop = new Population(sName, numDays);
+		myPop.setupArray();
+	
 		}
 		catch(Exception e) {}
 		finally {}
