@@ -9,7 +9,7 @@ public class Population {
 	private Scanner scan = new Scanner(System.in);
 	private int numDays = scan.nextInt();
 
-	//Creates an array for each day with the number of animals
+//Creates an array for each day with the number of animals
 	public int[] PopArray() {
 		
 		int[] popSizes = new int[n];
@@ -34,17 +34,19 @@ public class Population {
 		private int i;
 		private int d;
 		private int e;
-		private int overallPop;
 		
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 
-		//method for determining overall population
+//method for determining overall population
 		public void oaPop() {
-//determines the overall population size for the day
+			
+			final int overallPop;
+			
 			try( Scanner scan = new Scanner(System.in)) {
+				
 				System.out.println("Please enter the overall count for the day: ");
 				n = scan.nextInt();
 				System.out.println("Please enter the number of Births: ");
@@ -67,6 +69,8 @@ public class Population {
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
+		
+//Method for determining the double time of the population
 		public void dubTime() {
 			
 			final double dTime;
@@ -93,6 +97,8 @@ public class Population {
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
 //*********//******//*******//*******//********//********//********//********//*******//*******//**********//*********
+		
+//Method for determining the half life of the population
 		public void halfTime() {
 			final double hTime;
 			final double lambda;
